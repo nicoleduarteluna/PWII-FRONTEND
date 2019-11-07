@@ -2,10 +2,10 @@
  
   <ul class="navbar-nav">
     <li class="nav-item">
-        <a>Listar Projetos</a>
+        <a routerLink="projetos" routerLinkActive="active" class="nav-link">Listar Projetos</a>
     </li>
     <li class="nav-item">
-      <a>Adicionar Projeto</a>
+      <a routerLink="novoProjeto" routerLinkActive="active" class="nav-link">Adicionar Projeto</a>
     </li>
   </ul>
 </nav>
@@ -18,7 +18,8 @@
   <div class="card">
     <div class="card-body">
 
-      <has-lista-projetos></has-lista-projetos>
+     <!-- <has-lista-projetos></has-lista-projetos>-->
+     <router-outlet></router-outlet>
     
 
     </div>
