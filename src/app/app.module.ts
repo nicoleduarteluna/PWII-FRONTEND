@@ -7,6 +7,7 @@ import { NovoProjetoComponent } from './novo-projeto/novo-projeto.component';
 import { DetalheProjetoComponent } from './detalhe-projeto/detalhe-projeto.component';
 import { EditarProjetoComponent } from './editar-projeto/editar-projeto.component';
 import {HttpClientModule} from '@angular/common/http';
+import {ReactiveFormsModule} from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import {HttpClientModule} from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
