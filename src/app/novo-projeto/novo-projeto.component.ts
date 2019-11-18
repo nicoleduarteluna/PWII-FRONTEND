@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup} from '@angular/forms'; 
 import { ProjetoApiService } from '../service/projeto-api.service';
+import { Projeto } from '../model/projeto';
+
 @Component({
   selector: 'has-novo-projeto',
   templateUrl: './novo-projeto.component.html',
@@ -23,8 +25,8 @@ export class NovoProjetoComponent implements OnInit {
   }
 
   onSalvar() {
-    let projeto : Projeto = this.projetoForm.value;
-    this.service.createPojeto(projeto)
+    let projeto : Projeto = this.formNovo.value;
+    this.service.createProjeto(projeto)
     .subscribe(data => console.log(data),
     error => console.log(error));
     }
